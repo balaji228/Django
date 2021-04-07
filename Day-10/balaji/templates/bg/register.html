@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<form class="form-control-group" method="POST">
+{% csrf_token %}
+<div class="row">
+	<div class="col-sm-4">
+	</div>
+	<div class="col-sm-4">
+	<div class="card">
+		<div class="card-header">Registration Form</div>
+		<div class="card-body">
+	 	<label>UserName</label>
+	 	<input type="text" name="" class="form-control=60%" placeholder="Enter UserName"><br>
+	 	<label>Password</label>
+		<input type="Password" name="b" class="form-control=60%" placeholder="Enter Password"><br>
+		<label>Email</label>
+		<input type="email" name="a" class="form-control=60%" placeholder="Enter Email"><br>
+		<label>Age</label>
+		<input type="number" name="age" class="form-control=60%" placeholder="Enter Age"><br>
+		<label>Nationality</label>
+		<select >
+		<option>India</option>
+		<option>America</option>
+		<option>Australia</option>
+		<option>Others</option>
+		</select><br><br>
+		<button>Submit</button><br>
+  		</div>
+  	 	<div class="card-footer">This is a login page</div>
+	</div>
+	</div>
+</div>
+</form>
+</body>
+</html>
+
